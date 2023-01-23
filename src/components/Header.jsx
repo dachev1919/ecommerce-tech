@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {BsSearch} from "react-icons/bs";
+import {
+    Dropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+} from 'reactstrap';
 
 const Header = () => {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const toggle = () => setDropdownOpen((prevState) => !prevState);
+
     return (
         <>
             <header className="header-top-strip py-3">
@@ -68,6 +77,36 @@ const Header = () => {
                                             <p className='mb-0'>$ 500</p>
                                         </div>
                                     </Link>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </header>
+            <header className="header-bottom">
+                <Container fluid='xxl'>
+                    <Row>
+                        <Col className='col-12'>
+                            <div className="menu-bottom d-flex align-items-center gap-30">
+                                <div>
+                                    <Dropdown className='d-flex' isOpen={dropdownOpen} toggle={toggle}>
+                                        <DropdownToggle className='d-flex align-items-center gap-10 pb-3 pt-3 bg-transparent' caret>
+                                            Shop Categories
+                                        </DropdownToggle>
+                                        <DropdownMenu>
+                                            <DropdownItem>Action</DropdownItem>
+                                            <DropdownItem>Action</DropdownItem>
+                                            <DropdownItem>Action</DropdownItem>
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                </div>
+                                <div className='menu-links py-3'>
+                                    <div className='d-flex align-items-center gap-15'>
+                                        <NavLink to='/'>Home</NavLink>
+                                        <NavLink to='/'>Our Store</NavLink>
+                                        <NavLink to='/'>Blogs</NavLink>
+                                        <NavLink to='/ecommerce-tech/contact'>Contact</NavLink>
+                                    </div>
                                 </div>
                             </div>
                         </Col>
