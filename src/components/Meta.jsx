@@ -1,13 +1,15 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-const Meta = ({title, canonical}) => {
+const Meta = ({ title, canonical }) => {
     return (
-        <Helmet>
-            <meta charSet="utf-8" />
-            <title>{ title }</title>
-            <link rel="canonical" href={`https://dachev1919.github.io/ecommerce-tech/${canonical}`} />
-        </Helmet>
+        <HelmetProvider>
+            <Helmet>
+                <meta charSet="utf-8"/>
+                <title>{ title }</title>
+                <link rel="canonical" href={ `https://dachev1919.github.io/ecommerce-tech/${ canonical }` }/>
+            </Helmet>
+        </HelmetProvider>
     );
 };
 

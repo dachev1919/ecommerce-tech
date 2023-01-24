@@ -99,10 +99,10 @@ const Header = () => {
                                     </Dropdown>
                                 </div>
                                 <div className="menu-links py-3">
-                                    <div className="d-flex align-items-center gap-15">
+                                    <div className="d-flex align-items-center gap-30">
                                         <NavLink to="/ecommerce-tech">Home</NavLink>
                                         <NavLink to="/ecommerce-tech/store">Our Store</NavLink>
-                                        <NavLink to="/ecommerce-tech">Blogs</NavLink>
+                                        <NavLink to="/ecommerce-tech/blog">Blog</NavLink>
                                         <NavLink to="/ecommerce-tech/contact">Contact</NavLink>
                                     </div>
                                 </div>
