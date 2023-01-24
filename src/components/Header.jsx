@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import {BsSearch} from "react-icons/bs";
-import {
-    Dropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-} from 'reactstrap';
+import { BsSearch } from "react-icons/bs";
+import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap";
+import "../styles/Header.css";
 
 const Header = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -30,12 +26,13 @@ const Header = () => {
                 </Container>
             </header>
             <header className="header-upper py-3">
-                <Container fluid='xxl'>
-                    <Row className='align-items-center'>
-                        <Col className='col-2'>
-                            <h1 className='h2 mb-0'><Link className='text-white' to={'/ecommerce-tech'}>E-Tech</Link></h1>
+                <Container fluid="xxl">
+                    <Row className="align-items-center">
+                        <Col className="col-2">
+                            <h1 className="h2 mb-0"><Link className="text-white" to={ "/ecommerce-tech" }>E-Tech</Link>
+                            </h1>
                         </Col>
-                        <Col className='col-5'>
+                        <Col className="col-5">
                             <div className="input-group">
                                 <input
                                     type="text"
@@ -45,36 +42,36 @@ const Header = () => {
                                     aria-describedby="basic-addon2"
                                 />
                                 <span className="input-group-text p-3" id="basic-addon2">
-                                    <BsSearch className='fs-6' />
+                                    <BsSearch className="fs-6"/>
                                 </span>
                             </div>
                         </Col>
-                        <Col className='col-5'>
+                        <Col className="col-5">
                             <div className="header-upper__links d-flex align-items-center justify-content-between">
                                 <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                                    <Link className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/compare.svg" alt="compare"/>
-                                        <p className='mb-0'>Compare <br /> Products</p>
+                                        <p className="mb-0">Compare <br/> Products</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                                    <Link className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/wishlist.svg" alt="wishlist"/>
-                                        <p className='mb-0'>Favourite <br /> Wishlist</p>
+                                        <p className="mb-0">Favourite <br/> Wishlist</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                                    <Link className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/user.svg" alt="wishlist"/>
-                                        <p className='mb-0'>Login <br /> My Account</p>
+                                        <p className="mb-0">Login <br/> My Account</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                                    <Link className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/cart.svg" alt="wishlist"/>
-                                        <div className='d-flex flex-column gap-1'>
-                                            <span className='badge bg-white text-dark'>0</span>
-                                            <p className='mb-0'>$ 500</p>
+                                        <div className="d-flex flex-column gap-1">
+                                            <span className="badge bg-white text-dark">0</span>
+                                            <p className="mb-0">$ 500</p>
                                         </div>
                                     </Link>
                                 </div>
@@ -84,13 +81,14 @@ const Header = () => {
                 </Container>
             </header>
             <header className="header-bottom">
-                <Container fluid='xxl'>
+                <Container fluid="xxl">
                     <Row>
-                        <Col className='col-12'>
+                        <Col className="col-12">
                             <div className="menu-bottom d-flex align-items-center gap-30">
                                 <div>
-                                    <Dropdown className='d-flex' isOpen={dropdownOpen} toggle={toggle}>
-                                        <DropdownToggle className='d-flex align-items-center gap-10 pb-3 pt-3 bg-transparent' caret>
+                                    <Dropdown className="d-flex" isOpen={ dropdownOpen } toggle={ toggle }>
+                                        <DropdownToggle
+                                            className="d-flex align-items-center gap-10 pb-3 pt-3 bg-transparent" caret>
                                             Shop Categories
                                         </DropdownToggle>
                                         <DropdownMenu>
@@ -100,12 +98,12 @@ const Header = () => {
                                         </DropdownMenu>
                                     </Dropdown>
                                 </div>
-                                <div className='menu-links py-3'>
-                                    <div className='d-flex align-items-center gap-15'>
-                                        <NavLink to='/'>Home</NavLink>
-                                        <NavLink to='/'>Our Store</NavLink>
-                                        <NavLink to='/'>Blogs</NavLink>
-                                        <NavLink to='/ecommerce-tech/contact'>Contact</NavLink>
+                                <div className="menu-links py-3">
+                                    <div className="d-flex align-items-center gap-15">
+                                        <NavLink to="/ecommerce-tech">Home</NavLink>
+                                        <NavLink to="/ecommerce-tech/store">Our Store</NavLink>
+                                        <NavLink to="/ecommerce-tech">Blogs</NavLink>
+                                        <NavLink to="/ecommerce-tech/contact">Contact</NavLink>
                                     </div>
                                 </div>
                             </div>

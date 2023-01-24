@@ -1,0 +1,35 @@
+.popular-products__banner:hover img {
+    transform: scale(1.05);
+}
+
+.popular-products__banner img {
+    object-fit: cover;
+    transition: all .6s ease;
+    width: 100%;
+    transform: scale(1);
+}
+
+.popular-products__banner.card-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+
+.popular-products__banner-content {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.popular-products__banner-text,
+.popular-products__banner-subtitle {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.popular-products__banner-title {
+    font-size: 1.8rem;
+}
+
+.popular-products__banner-text {
+    line-height: 150%;
+}

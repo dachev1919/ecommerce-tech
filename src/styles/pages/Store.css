@@ -1,0 +1,106 @@
+.filter-title {
+    margin-bottom: 1.5rem;
+    color: var(--color-131921);
+    font-size: 1.1rem;
+}
+
+
+.filter-subtitle {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--color-1c1c1b);
+    margin-bottom: 1rem;
+}
+
+.store .card-wrapper {
+    padding: 1rem;
+}
+
+.category-filter ul {
+    padding: 0;
+    margin: 0;
+}
+
+.store .form-check-disable .form-check-label {
+    opacity: .2;
+}
+
+.store .form-check-label,
+.category-filter li {
+    cursor: pointer;
+    list-style: none;
+    transition: all .3s ease;
+    color: var(--color-777777);
+    outline: none;
+}
+
+.store .form-check-input:focus {
+    box-shadow: none;
+}
+
+.store .category-filter li:hover {
+    color: var(--color-febd69);
+}
+
+.store .filter-price input {
+    background-color: var(--color-f5f5f7)!important;
+}
+
+.store .filter-price__item:first-child {
+    margin-right: .8rem;
+}
+
+.store .filter-price__item > div {
+    margin-left: .2rem;
+}
+
+.store .filter-colors {
+    padding: 0;
+}
+
+.store .filter-colors li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    list-style: none;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.store .filter-colors li:hover:before {
+    opacity: 1;
+}
+
+.store .filter-colors li:before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 1px;
+    top: 1px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.store .filter-tags {
+    margin-bottom: -.6rem;
+}
+
+.store .filter-tags .badge {
+    cursor: pointer;
+    padding: .6rem .4rem;
+    background-color: var(--color-f5f5f7);
+    color: var(--color-777777);
+    font-weight: 300;
+    margin: 0 .6rem .6rem 0;
+    transition: all .3s ease;
+}
+
+.store .filter-tags .badge:hover {
+    background-color: var(--color-ededed);
+}

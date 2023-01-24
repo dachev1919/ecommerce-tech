@@ -1,0 +1,51 @@
+footer {
+    background-color: var(--color-131921);
+}
+
+footer.newsletter .input-group-text {
+    background-color: var(--color-131921);
+    color: white;
+    border: 3px solid white;
+}
+
+footer.newsletter .input-group-text:active,
+footer.newsletter .input-group-text:hover {
+    background-color: var(--color-232f3e);
+}
+
+footer.newsletter .input-group-text {
+    line-height: 88%;
+}
+
+footer:not(:first-child) {
+    border-top: 1px solid var(--color-3b4149);
+}
+
+footer.copyright p {
+    user-select: none;
+    font-size: .8rem;
+}
+
+footer .footer-links a {
+    font-weight: 300;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+    opacity: .8;
+}
+
+footer .social-icons svg {
+    line-height: 100%;
+    display: flex;
+}
+
+footer .social-icons a {
+    background-color: var(--color-3b4149);
+    padding: .7rem;
+    border-radius: 50%;
+}

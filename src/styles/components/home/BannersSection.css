@@ -1,0 +1,48 @@
+.banners__banner:hover img {
+    transform: scale(1.05);
+}
+
+.banners__banner img {
+    object-fit: cover;
+    transition: all .6s ease;
+    width: 100%;
+    transform: scale(1);
+}
+
+.banners__banner.card-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+
+.banners__banner-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1.5rem 1rem;
+}
+
+.banners__banner-text,
+.banners__banner-subtitle {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.banners__banner-subtitle {
+    text-transform: uppercase;
+}
+
+.banners__banner-title {
+    font-size: 1.3rem;
+}
+
+.banners__banner-text {
+    line-height: 150%;
+}
+
+.banners .row > div:first-child * {
+    color: white;
+}
+
+.banners .row > div:not(:first-child) * {
+    color: var(--color-131921);
+}

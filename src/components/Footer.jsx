@@ -1,7 +1,7 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import "../styles/Footer.css";
 
 const Footer = () => {
     return (
@@ -45,16 +45,16 @@ const Footer = () => {
                                 <a href="mailto:admin@admin.com" className="mt-3 d-block">admin@admin.com</a>
                                 <div className="social-icons gap-30 d-flex mt-3 align-items-center">
                                     <a href="/">
-                                        <BsLinkedin className='text-white fs-6'/>
+                                        <BsLinkedin className="text-white fs-6"/>
                                     </a>
                                     <a href="/">
-                                        <BsGithub className='text-white fs-6'/>
+                                        <BsGithub className="text-white fs-6"/>
                                     </a>
                                     <a href="/">
-                                        <BsYoutube className='text-white fs-6'/>
+                                        <BsYoutube className="text-white fs-6"/>
                                     </a>
                                     <a href="/">
-                                        <BsInstagram className='text-white fs-6'/>
+                                        <BsInstagram className="text-white fs-6"/>
                                     </a>
                                 </div>
                             </div>
