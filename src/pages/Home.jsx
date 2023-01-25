@@ -12,12 +12,10 @@ import BlogSection from "../components/home/BlogSection";
 import { PRODUCTS } from "../assets/data/products";
 import Meta from "../components/Meta";
 
-
 const Home = () => {
-
     return (
         <>
-            <Meta title='Home' canonical=''/>
+            <Meta title="Home" canonical=""/>
 
             <HeroSection/>
 

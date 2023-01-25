@@ -1,0 +1,39 @@
+.wishlist__product-image img {
+    max-width: 100%;
+}
+
+.wishlist__product-cross {
+    width: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 99;
+}
+
+.wishlist__product-cross:hover {
+    opacity: .7;
+}
+
+.wishlist__product-title {
+    font-size: 1.5rem;
+}
+
+.wishlist__product-price,
+.wishlist__product-title {
+    color: var(--color-131921);
+    transition: all .3s ease;
+}
+
+.wishlist__product-title:hover {
+    opacity: .85;
+}
+
+.wishlist .card-wrapper {
+    padding: 1rem;
+}
+
+.wishlist {
+    min-height: 350px;
+}

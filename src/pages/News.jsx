@@ -11,7 +11,7 @@ const News = () => {
         image,
         date,
         title,
-        description
+        description,
     } = news;
 
     window.scrollTo(0, 0);
@@ -22,18 +22,20 @@ const News = () => {
 
     return (
         <>
-            <Meta canonical={`blog/${news.id}`} title={news.title} />
-            <section className='news'>
+            <Meta canonical={ `blog/${ news.id }` } title={ news.title }/>
+            <section className="news">
                 <Container>
-                    <Row className='col-8 m-auto'>
+                    <Row className="col-8 m-auto">
                         <div className="news__image card-wrapper p-0 overflow-hidden">
-                            <img className='w-100' src={image} alt="news"/>
+                            <img className="w-100" src={ image } alt="news"/>
                         </div>
                         <div className="news__content text-center">
-                            <p className="news__date mt-4">{date}</p>
-                            <h1 className='mt-4'>{title}</h1>
-                            <h5 className='mt-4'>{description}</h5>
-                            <Link to={'/ecommerce-tech/blog'}><button className='btn btn-primary mt-4'>Back</button></Link>
+                            <p className="news__date mt-4">{ date }</p>
+                            <h1 className="mt-4">{ title }</h1>
+                            <h5 className="mt-4">{ description }</h5>
+                            <Link to={ "/ecommerce-tech/blog" }>
+                                <button className="btn btn-primary mt-4">Back</button>
+                            </Link>
                         </div>
                     </Row>
                 </Container>

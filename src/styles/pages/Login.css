@@ -1,0 +1,22 @@
+.login {
+    padding: 6rem 0;
+}
+
+.login__wrapper {
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.login .card-wrapper {
+    padding: 2rem 1.5rem;
+}
+
+.login__wrapper .login__form > a {
+    color: var(--color-131921)!important;
+}
+
+.login__wrapper .login__form > a:hover {
+    opacity: .8;
+}

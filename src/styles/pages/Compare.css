@@ -56,3 +56,8 @@
     line-height: 100%;
     width: 100%;
 }
+
+.compare__product-content a:hover {
+    color: var(--color-131921);
+    opacity: .85;
+}

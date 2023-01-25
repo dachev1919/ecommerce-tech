@@ -1,12 +1,3 @@
-.contact .form-control {
-    background-color: var(--color-f5f5f7);
-    transition: all .3s ease;
-}
-
-html .contact .form-control:focus {
-    background-color: var(--color-ededed);
-}
-
 .contact__form {
     padding: 1rem;
 }

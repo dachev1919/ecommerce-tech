@@ -10,6 +10,12 @@ import Cart from "../pages/Cart";
 import Wishlist from "../pages/Wishlist";
 import Login from "../pages/Login";
 import ProductDetails from "../pages/ProductDetails";
+import ForgotPassword from "../pages/ForgotPassword";
+import Signup from "../pages/Signup";
+import TermOfService from "../pages/TermOfService";
+import ShippingPolicy from "../pages/ShippingPolicy";
+import RefundPolicy from "../pages/RefundPolicy";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 const Routers = () => {
     return (
@@ -26,6 +32,12 @@ const Routers = () => {
             <Route path="/ecommerce-tech/wishlist" element={ <Wishlist /> }/>
             <Route path="/ecommerce-tech/login" element={ <Login /> }/>
             <Route path="/ecommerce-tech/cart" element={ <Cart /> }/>
+            <Route path="/ecommerce-tech/forgot" element={ <ForgotPassword /> }/>
+            <Route path="/ecommerce-tech/signup" element={ <Signup /> }/>
+            <Route path="/ecommerce-tech/privacy-policy" element={ <PrivacyPolicy /> }/>
+            <Route path="/ecommerce-tech/refund-policy" element={ <RefundPolicy /> }/>
+            <Route path="/ecommerce-tech/shipping-policy" element={ <ShippingPolicy /> }/>
+            <Route path="/ecommerce-tech/term-policy" element={ <TermOfService /> }/>
         </Routes>
     );
 };

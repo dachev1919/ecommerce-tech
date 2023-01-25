@@ -62,11 +62,11 @@ const Footer = () => {
                         <Col className="col-3">
                             <h5 className="text-white mb-4">Information</h5>
                             <div className="footer-links flex-column d-flex">
-                                <Link className="text-white py-2 mn-1">Privacy Policy</Link>
-                                <Link className="text-white py-2 mn-1">Refund Policy</Link>
-                                <Link className="text-white py-2 mn-1">Shipping Policy</Link>
-                                <Link className="text-white py-2 mn-1">Terms Of Service</Link>
-                                <Link className="text-white py-2 mn-1">Blogs</Link>
+                                <Link to="/ecommerce-tech/privacy-policy" className="text-white py-2 mn-1">Privacy Policy</Link>
+                                <Link to="/ecommerce-tech/refund-policy" className="text-white py-2 mn-1">Refund Policy</Link>
+                                <Link to="/ecommerce-tech/shipping-policy" className="text-white py-2 mn-1">Shipping Policy</Link>
+                                <Link to="/ecommerce-tech/term-policy" className="text-white py-2 mn-1">Terms Of Service</Link>
+                                <Link to="/ecommerce-tech/blog" className="text-white py-2 mn-1">Blogs</Link>
                             </div>
                         </Col>
                         <Col className="col-3">
@@ -82,11 +82,11 @@ const Footer = () => {
                         <Col className="col-2">
                             <h5 className="text-white mb-4">Quick Links</h5>
                             <div className="footer-links flex-column d-flex">
-                                <Link className="text-white py-2 mn-1">Accessories</Link>
-                                <Link className="text-white py-2 mn-1">Laptops</Link>
-                                <Link className="text-white py-2 mn-1">Headphones</Link>
-                                <Link className="text-white py-2 mn-1">Tablets</Link>
-                                <Link className="text-white py-2 mn-1">Watches</Link>
+                                <Link to='/ecommerce-tech/store' className="text-white py-2 mn-1">Accessories</Link>
+                                <Link to='/ecommerce-tech/store' className="text-white py-2 mn-1">Laptops</Link>
+                                <Link to='/ecommerce-tech/store' className="text-white py-2 mn-1">Headphones</Link>
+                                <Link to='/ecommerce-tech/store' className="text-white py-2 mn-1">Tablets</Link>
+                                <Link to='/ecommerce-tech/store' className="text-white py-2 mn-1">Watches</Link>
                             </div>
                         </Col>
                     </Row>
