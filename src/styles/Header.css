@@ -34,6 +34,14 @@
     color: var(--color-febd69)!important;
 }
 
+.header-upper__links a img {
+    transition: all .6s ease;
+}
+
+.header-upper__links a:hover img {
+    transform: rotateY(360deg) rotateZ(1deg);
+}
+
 .header-bottom {
     background-color: var(--color-232f3e);
 }

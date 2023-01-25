@@ -59,7 +59,7 @@ const SpecialProduct = ({ id, image, secondImage, thirdImage, title, brand, desc
                 </div>
                 <div className="special-product__content">
                     <h5 className="special-product__brand">{ brand }</h5>
-                    <Link to={ `/ecommerce-tech/product/${ id }` }><h6
+                    <Link to={ `/ecommerce-tech/store/${ id }` }><h6
                         className="special-product__title">{ truncate(title, 30) }</h6></Link>
                     <ReactStars
                         count={ 5 }
@@ -90,7 +90,7 @@ const SpecialProduct = ({ id, image, secondImage, thirdImage, title, brand, desc
                                  aria-valuemin="0" aria-valuemax="100"/>
                         </div>
                     </div>
-                    <Link to={ `/ecommerce-tech/product/${ id }` } className="btn btn-primary">View</Link>
+                    <Link to={ `/ecommerce-tech/store/${ id }` } className="btn btn-primary">View</Link>
                 </div>
             </div>
         </div>

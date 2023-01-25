@@ -4,10 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap";
 import "../styles/Header.css";
+import { useSelector } from "react-redux";
 
 const Header = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const toggle = () => setDropdownOpen((prevState) => !prevState);
+    const cartTotalQuantity = useSelector(state => state.cart.totalQuantity);
+    const cartTotalAmount = useSelector(state => state.cart.totalAmount);
 
     return (
         <>
@@ -49,29 +52,29 @@ const Header = () => {
                         <Col className="col-5">
                             <div className="header-upper__links d-flex align-items-center justify-content-between">
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/ecommerce-tech/compare' className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/compare.svg" alt="compare"/>
                                         <p className="mb-0">Compare <br/> Products</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/ecommerce-tech/wishlist' className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/wishlist.svg" alt="wishlist"/>
                                         <p className="mb-0">Favourite <br/> Wishlist</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/ecommerce-tech/login' className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/user.svg" alt="wishlist"/>
                                         <p className="mb-0">Login <br/> My Account</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/ecommerce-tech/cart' className="d-flex align-items-center gap-10 text-white">
                                         <img src="/images/cart.svg" alt="wishlist"/>
                                         <div className="d-flex flex-column gap-1">
-                                            <span className="badge bg-white text-dark">0</span>
-                                            <p className="mb-0">$ 500</p>
+                                            <span className="badge bg-white text-dark">{ cartTotalQuantity }</span>
+                                            <p className="mb-0">$ { cartTotalAmount }</p>
                                         </div>
                                     </Link>
                                 </div>

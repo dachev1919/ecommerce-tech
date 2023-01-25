@@ -18,10 +18,10 @@ const MiniProduct = ({ product }) => {
     return (
         <div className="mini-product d-flex">
             <div className="mini-product__image">
-                <Link to={ `/ecommerce-tech/product/${ id }` }><img src={ image } alt=""/></Link>
+                <Link to={ `/ecommerce-tech/store/${ id }` }><img src={ image } alt=""/></Link>
             </div>
             <div className="mini-product__content">
-                <Link to={ `/ecommerce-tech/product/${ id }` }><h5
+                <Link to={ `/ecommerce-tech/store/${ id }` }><h5
                     className="mb-1 mini-product__title">{ truncate(title, 25) }</h5></Link>
                 <ReactStars
                     count={ 5 }

@@ -1,6 +1,6 @@
-import Meta from "../../components/Meta";
+import Meta from "../components/Meta";
 import { Link, useParams } from "react-router-dom";
-import { BLOG } from "../../assets/data/blog";
+import { BLOG } from "../assets/data/blog";
 import { Container, Row } from "react-bootstrap";
 import { useEffect } from "react";
 

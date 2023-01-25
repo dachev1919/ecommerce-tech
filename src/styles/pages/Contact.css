@@ -1,0 +1,29 @@
+.contact .form-control {
+    background-color: var(--color-f5f5f7);
+    transition: all .3s ease;
+}
+
+html .contact .form-control:focus {
+    background-color: var(--color-ededed);
+}
+
+.contact__form {
+    padding: 1rem;
+}
+
+.contact__form-right {
+    padding-left: 3rem;
+}
+
+.contact__info * {
+    color: var(--color-777777);
+}
+
+.contact__info a *,
+.contact__info a {
+    transition: all .3s ease;
+}
+
+.contact__info a:hover * {
+    color: var(--color-bf4800);
+}

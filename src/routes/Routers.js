@@ -4,7 +4,12 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Store from "../pages/Store";
 import Blog from "../pages/Blog";
-import News from "../styles/pages/News";
+import News from "../pages/News";
+import Compare from "../pages/Compare";
+import Cart from "../pages/Cart";
+import Wishlist from "../pages/Wishlist";
+import Login from "../pages/Login";
+import ProductDetails from "../pages/ProductDetails";
 
 const Routers = () => {
     return (
@@ -13,10 +18,14 @@ const Routers = () => {
             <Route path="/ecommerce-tech" element={ <Home/> }/>
             <Route path="/ecommerce-tech/about" element={ <About/> }/>
             <Route path="/ecommerce-tech/contact" element={ <Contact/> }/>
-            <Route path="/ecommerce-tech/product/:id" element={ <Contact/> }/>
+            <Route path="/ecommerce-tech/store/:id" element={ <ProductDetails /> }/>
             <Route path="/ecommerce-tech/store" element={ <Store/> }/>
             <Route path="/ecommerce-tech/blog" element={ <Blog /> }/>
             <Route path="/ecommerce-tech/blog/:id" element={ <News /> }/>
+            <Route path="/ecommerce-tech/compare" element={ <Compare /> }/>
+            <Route path="/ecommerce-tech/wishlist" element={ <Wishlist /> }/>
+            <Route path="/ecommerce-tech/login" element={ <Login /> }/>
+            <Route path="/ecommerce-tech/cart" element={ <Cart /> }/>
         </Routes>
     );
 };

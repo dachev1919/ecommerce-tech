@@ -12,7 +12,7 @@ const Blog = () => {
 
     return (
         <>
-            <Meta title='blog' canonical={'blog/'} />
+            <Meta title='Blog' canonical={'blog/'} />
             <section className="blog">
                 <Container fluid='xxl'>
                     <h3 className='section-heading text-center'>Blog</h3>
