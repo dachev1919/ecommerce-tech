@@ -20,7 +20,7 @@ const Login = () => {
             <Meta title="Login" canonical={ "login/" }/>
             <Breadcrumb title="Login"/>
             <section className="login">
-                <Container>
+                <Container fluid='xxl'>
                     <div className="login__wrapper text-center card-wrapper">
                         <h3 className='mb-4'>Login</h3>
                         <form className='login__form' onSubmit={(e) => formSubmitHandler(e)}>

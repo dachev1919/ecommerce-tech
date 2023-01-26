@@ -1,0 +1,118 @@
+.product-details__content {
+    padding-top: 1rem;
+    position: sticky;
+    top: 0;
+    padding-right: 1rem;
+}
+
+.product-details__content > * {
+    margin-bottom: 1.3rem;
+    line-height: 100%;
+}
+
+.product-details__content p  {
+    color: var(--color-777777);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.product-details__content p span {
+    font-weight: 600;
+    margin-right: .8rem;
+    color: var(--color-131921);
+}
+
+.product-details__write-review,
+.product-details__title {
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid var(--color-f5f5f7);
+}
+
+.product-details__write-review a {
+    color: var(--color-bf4800)!important;
+    transition: all .3s ease;
+}
+
+.product-details__write-review a:hover {
+    opacity: .8;
+}
+
+.product-details__actions {
+    cursor: pointer;
+}
+
+.product-details__actions p {
+    line-height: 100%;
+    color: var(--color-131921);
+}
+
+.product-details__main-image .swiper-pagination-bullet-active {
+    background-color: var(--color-131921);
+}
+
+.product-details__thumbs-image img {
+    cursor: pointer;
+}
+
+.product-details__description-wrapper p {
+    color: var(--color-777777);
+    line-height: 150%;
+}
+
+.product-details__review .card-wrapper,
+.product-details__description-wrapper .card-wrapper {
+    padding: 1rem;
+}
+
+.product-details__thumbs-image img,
+.product-details__main-image img {
+    border: 1px solid var(--color-f5f5f7);
+}
+
+.product-details__color span:not(.title) {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    list-style: none;
+    margin-right: .5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-details__color span:not(.title):hover:before {
+    opacity: 1;
+}
+
+.product-details__color span:not(.title):before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 1px;
+    top: 1px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.product-details__tags {
+
+}
+
+.product-details__tags span:not(.title) {
+    cursor: pointer;
+    padding: .4rem .4rem;
+    background-color: var(--color-f5f5f7);
+    color: var(--color-777777);
+    font-weight: 300;
+    margin-right: .6rem;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.product-details__tags span:not(.title):hover {
+    background-color: var(--color-ededed);
+}

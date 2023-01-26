@@ -24,6 +24,12 @@ p {
     line-height: 100%;
 }
 
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 html a {
     text-decoration: none;
     display: inline-block;
@@ -131,6 +137,30 @@ html .form-check-input:focus {
 
 html .form-check-label {
     user-select: none;
+}
+
+.policy .card-wrapper {
+    padding: 1.5rem;
+}
+
+.policy__item:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.policy__item h5 {
+    margin-bottom: 1rem;
+}
+
+.policy__item p {
+    margin: 0;
+    color: var(--color-777777);
+}
+
+@media screen and (max-width: 1399px) {
+    .card-wrapper:not(.without-margin) {
+        margin-left: calc(var(--bs-gutter-x) * .5);
+        max-width: calc(100% - calc(var(--bs-gutter-x) * 1));
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {

@@ -33,6 +33,11 @@ const Wishlist = () => {
             secondImage: product.secondImage,
             thirdImage: product.thirdImage,
             category: product.category,
+            tags: product.tags,
+            color: product.color,
+            type: product.type,
+            sku: product.sku,
+            availability: product.availability,
         }));
 
         toast.success("product added successfully");
@@ -43,7 +48,7 @@ const Wishlist = () => {
             <Meta title="Wishlist" canonical={ "wishlist/" }/>
             <Breadcrumb title="Wishlist"/>
             <section className="wishlist d-flex align-items-center">
-                <Container>
+                <Container fluid='xxl'>
                     <Row>
                         {
                             wishlist.length

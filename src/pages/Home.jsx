@@ -23,7 +23,7 @@ const Home = () => {
 
             <CategoriesSection/>
 
-            <FeaturedSection products={ PRODUCTS }/>
+            <FeaturedSection products={ PRODUCTS } title='Featured Collection'/>
 
             <BannersSection/>
 

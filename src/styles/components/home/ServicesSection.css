@@ -1,3 +1,7 @@
 .services-section {
     background-color: var(--color-f5f5f7);
 }
+
+.services img {
+    max-width: 30px;
+}

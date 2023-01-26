@@ -24,7 +24,7 @@ const Contact = () => {
         <>
             <Breadcrumb title="Contact" path=""/>
             <section className="contact">
-                <Container>
+                <Container fluid='xxl'>
                     <iframe
                         title="google"
                         className="w-100 p-0 m-0"

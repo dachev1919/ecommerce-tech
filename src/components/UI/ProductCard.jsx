@@ -22,29 +22,13 @@ const ProductCard = ({ product }) => {
         image,
         title,
         brand,
-        description,
         price,
         rating,
-        link,
         secondImage,
-        thirdImage,
-        category
     } = product;
 
     const addToCartHandler = () => {
-        dispatch(cartAction.addItem({
-            id,
-            image,
-            title,
-            brand,
-            description,
-            price,
-            rating,
-            link,
-            secondImage,
-            thirdImage,
-            category,
-        }));
+        dispatch(cartAction.addItem(product));
 
         toast.success('product added successfully');
     }
@@ -58,7 +42,7 @@ const ProductCard = ({ product }) => {
     }
 
     return (
-        <div className="product-card card-wrapper rounded-3 position-relative">
+        <div className="product-card card-wrapper without-margin rounded-3 position-relative mb-4">
             <div className="product-card__image mb-1">
                 <Link to={ `/ecommerce-tech/store/${ id }` }>
                     <img src={ image } alt="product"/>

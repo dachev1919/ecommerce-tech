@@ -23,7 +23,7 @@ const Compare = () => {
             <Meta title="Compare" canonical={ "compare/" }/>
             <Breadcrumb title="Compare"/>
             <section className="compare d-flex align-items-center">
-                <Container>
+                <Container fluid='xxl'>
                     {
                         products.length
                             ? <>
@@ -34,6 +34,11 @@ const Compare = () => {
                                         <p>Price:</p>
                                         <p>Rating:</p>
                                         <p>Category:</p>
+                                        <p>Tags:</p>
+                                        <p>Color:</p>
+                                        <p>Type:</p>
+                                        <p>SKU:</p>
+                                        <p>Availability:</p>
                                     </div>
                                     <div className="compare__products d-flex overflow-auto">
                                         {
@@ -53,6 +58,18 @@ const Compare = () => {
                                                         <p>{ product.price }</p>
                                                         <p>{ product.rating }</p>
                                                         <p>{ product.category }</p>
+                                                        <p>{ product.tags.join(", ") }</p>
+                                                        <p>{
+                                                            product.color.map(color => (
+                                                                <span
+                                                                    className='d-inline-block'
+                                                                    style={{ background: color, width: '10px', height: '10px', marginRight: '10px', borderRadius: '50%' }}
+                                                                />
+                                                            ))
+                                                        }</p>
+                                                        <p>{ product.type }</p>
+                                                        <p>{ product.sku }</p>
+                                                        <p>{ product.availability }</p>
                                                     </div>
                                                 </div>
                                             ))

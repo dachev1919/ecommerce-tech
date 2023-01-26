@@ -13,6 +13,10 @@ footer.newsletter .input-group-text:hover {
     background-color: var(--color-232f3e);
 }
 
+footer .footer-top-data img {
+    max-width: 30px;
+}
+
 footer.newsletter .input-group-text {
     line-height: 88%;
 }

@@ -24,7 +24,7 @@ const News = () => {
         <>
             <Meta canonical={ `blog/${ news.id }` } title={ news.title }/>
             <section className="news">
-                <Container>
+                <Container fluid='xxl'>
                     <Row className="col-8 m-auto">
                         <div className="news__image card-wrapper p-0 overflow-hidden">
                             <img className="w-100" src={ image } alt="news"/>

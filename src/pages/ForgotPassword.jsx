@@ -18,7 +18,7 @@ const ForgotPassword = () => {
             <Meta title="Forgot Password" canonical={ "forgot/" }/>
             <Breadcrumb title="Forgot"/>
             <section className="forgot">
-                <Container>
+                <Container fluid='xxl'>
                     <div className="forgot__wrapper text-center card-wrapper">
                         <h3 className="mb-3">Reset Your Password</h3>
                         <p className="mb-4">We will send you an email to reset your password</p>
