@@ -47,11 +47,11 @@ const Header = () => {
             <header className="header-upper py-3">
                 <Container fluid="xxl">
                     <Row className="align-items-center">
-                        <Col className="col-2" >
+                        <Col className="col-4" md='2'>
                             <h1 className="h2 mb-0"><Link className="text-white" to={ "/ecommerce-tech" }>E-Tech</Link>
                             </h1>
                         </Col>
-                        <Col className="col-10">
+                        <Col className="col-8" md='10'>
                             <div className="header-upper__links d-flex align-items-center justify-content-end gap-3 gap-sm-4 gap-md-0 justify-content-md-between">
                                 <div ref={searchRef} className="input-group position-relative">
                                     <div className='form-control p-0'>
