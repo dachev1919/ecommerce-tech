@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import "../styles/pages/Compare.css";
 import { Link } from "react-router-dom";
 import { compareActions } from "../store/compare/compareSlice";
+import cross from '../assets/images/cross.svg';
 
 function truncate(str, n) {
     return (str.length > n) ? str.slice(0, n - 1) + "..." : str;
@@ -48,7 +49,7 @@ const Compare = () => {
                                                         <Link to={ `/ecommerce-tech/store/${ product.id }` }><img
                                                             src={ product.image } alt="product"/></Link>
                                                         <img onClick={ () => addToCompareHandler(product) }
-                                                             className="compare__product-cross" src="images/cross.svg"
+                                                             className="compare__product-cross" src={ cross }
                                                              alt="cross"/>
                                                     </div>
                                                     <div className="compare__product-content text-center">

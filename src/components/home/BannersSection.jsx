@@ -1,6 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../styles/components/home/BannersSection.css";
+import img1 from '../../assets/images/banner-1.png';
+import img2 from '../../assets/images/banner-2.png';
+import img3 from '../../assets/images/banner-3.png';
+import img4 from '../../assets/images/banner-4.png';
 
 const BANNERS = [
     {
@@ -8,28 +12,28 @@ const BANNERS = [
         subtitle: "Big Screen",
         title: "Smart Watch Series 7",
         text: "From $399 or $16.62/mo. for 24 mo.*",
-        image: "images/banner-1.png",
+        image: img1,
     },
     {
         id: 3002,
         subtitle: "Studio Display",
         title: "600 nits of brightness.",
         text: "27-inch 5K Retina display",
-        image: "images/banner-2.png",
+        image: img2,
     },
     {
         id: 3003,
         subtitle: "Smartphones",
         title: "Smartphone 13 Pro.",
         text: "Now in Green. From $999.00 or $41.62/mo. for 24 mo. Footnote*",
-        image: "images/banner-3.png",
+        image: img3,
     },
     {
         id: 3004,
         subtitle: "Home Speakers",
         title: "Room-filling sound",
         text: "From $699 or $116.58/mo. for 12 mo.*",
-        image: "images/banner-4.png",
+        image: img4,
     },
 ];
 

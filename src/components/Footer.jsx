@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 import "../styles/Footer.css";
+import newsletter from '../assets/images/newsletter.png';
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
                     <Row>
                         <Col className="col-12 mb-4 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start" md='5'>
                             <div className="footer-top-data d-flex align-items-center gap-30">
-                                <img src="images/newsletter.png" alt="newsletter"/>
+                                <img src={ newsletter } alt="newsletter"/>
                                 <h2 className="mb-0 text-white">Sign Up For Newsletter</h2>
                             </div>
                         </Col>

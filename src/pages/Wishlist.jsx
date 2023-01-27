@@ -7,6 +7,7 @@ import { wishlistActions } from "../store/wishlist/wishlistSlice";
 import "../styles/pages/Wishlist.css";
 import { cartAction } from "../store/cart/cartSlice";
 import { toast } from "react-toastify";
+import cross from '../assets/images/cross.svg';
 
 function truncate(str, n) {
     return (str.length > n) ? str.slice(0, n - 1) + "..." : str;
@@ -60,7 +61,7 @@ const Wishlist = () => {
                                                     <Link to={ `/ecommerce-tech/store/${ product.id }` }><img
                                                         src={ product.image } alt="product"/></Link>
                                                     <img onClick={ () => addToWishlistHandler(product) }
-                                                         className="wishlist__product-cross" src="images/cross.svg"
+                                                         className="wishlist__product-cross" src={ cross }
                                                          alt="cross"/>
                                                 </div>
                                                 <div className="wishlist__product-info">

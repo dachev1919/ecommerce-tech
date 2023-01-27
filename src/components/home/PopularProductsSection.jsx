@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ProductCard from "../UI/ProductCard";
 import "../../styles/components/home/PopularProductsSection.css";
+import img1 from '../../assets/images/banner.png'
 
 const PopularProductsSection = ({ products }) => {
     return (
@@ -13,7 +14,7 @@ const PopularProductsSection = ({ products }) => {
                         <Link to={ "/ecommerce-tech" }>
                             <div className="popular-products__banner card-wrapper without-margin position-relative">
                                 <div className="popular-products__banner-image">
-                                    <img src="images/banner.png" alt=""/>
+                                    <img src={ img1 } alt=""/>
                                 </div>
                                 <div className="popular-products__banner-content">
                                     <h3 className="popular-products__banner-subtitle text-white mb2">10% OFF</h3>

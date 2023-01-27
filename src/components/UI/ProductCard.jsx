@@ -7,6 +7,10 @@ import { toast } from "react-toastify";
 import { wishlistActions } from "../../store/wishlist/wishlistSlice";
 import { IoGitCompareOutline, IoGitCompareSharp } from "react-icons/io5";
 import { compareActions } from "../../store/compare/compareSlice";
+import wishBlack from '../../assets/images/wish-black.svg';
+import wish from '../../assets/images/wish.svg';
+import addCart from '../../assets/images/add-cart.svg';
+import view from '../../assets/images/view.svg';
 
 function truncate(str, n) {
     return (str.length > n) ? str.slice(0, n - 1) + "..." : str;
@@ -65,9 +69,9 @@ const ProductCard = ({ product }) => {
             </div>
             <div className="product-card__action-bar position-absolute">
                 <div className="d-flex flex-column gap-1">
-                    <div className='product-card__action-button' onClick={() => addToWishlist()}><img style={{ width: '16px' }} src={ `${inWishlist ? 'images/wish-black.svg' : 'images/wish.svg'}` } alt="wish"/></div>
-                    <div className='product-card__action-button' onClick={() => addToCartHandler()}><img src="images/add-cart.svg" alt="add"/></div>
-                    <Link className='product-card__action-button' to={`/ecommerce-tech/store/${ id }`}><img src="images/view.svg" alt="view"/></Link>
+                    <div className='product-card__action-button' onClick={() => addToWishlist()}><img style={{ width: '16px' }} src={ `${inWishlist ? wishBlack : wish}` } alt="wish"/></div>
+                    <div className='product-card__action-button' onClick={() => addToCartHandler()}><img src={ addCart } alt="add"/></div>
+                    <Link className='product-card__action-button' to={`/ecommerce-tech/store/${ id }`}><img src={view} alt="view"/></Link>
                     <div className='product-card__action-button' onClick={() => addToCompare()}>
                         {
                             inCompare ? <IoGitCompareSharp /> : <IoGitCompareOutline />

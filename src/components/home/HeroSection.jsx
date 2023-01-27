@@ -3,6 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import "../../styles/components/home/HeroSection.css";
+import mainBanner1 from '../../assets/images/main-banner-1.jpg';
+import mainBanner from '../../assets/images/main-banner.jpg';
+import catbanner1 from '../../assets/images/catbanner-01.jpg';
+import catbanner2 from '../../assets/images/catbanner-02.jpg';
+import catbanner3 from '../../assets/images/catbanner-03.jpg';
+import catbanner4 from '../../assets/images/catbanner-04.jpg';
 
 SwiperCore.use([Pagination, EffectCoverflow]);
 
@@ -28,7 +34,7 @@ const HeroSection = () => {
                             pagination={ { clickable: true } }
                         >
                             <SwiperSlide>
-                                <img src="images/main-banner-1.jpg" className="img-fluid" alt="m-banner"/>
+                                <img src={ mainBanner1 } className="img-fluid" alt="m-banner"/>
                                 <div className="main-banner__content position-absolute">
                                     <h4>Supercharged For Pros.</h4>
                                     <h5>iPad S13+ Pro.</h5>
@@ -37,7 +43,7 @@ const HeroSection = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="images/main-banner.jpg" className="img-fluid " alt="m-banner"/>
+                                <img src={ mainBanner } className="img-fluid " alt="m-banner"/>
                                 <div className="main-banner__content position-absolute">
                                     <h4>Supercharged For Pros.</h4>
                                     <h5>iPad S13+ Pro.</h5>
@@ -51,7 +57,7 @@ const HeroSection = () => {
                     <Col className="col-12" lg='6'>
                         <div className="small-banners d-grid">
                             <Link className="small-banner position-relative">
-                                <img src="images/catbanner-01.jpg" className="img-fluid" alt="m-banner"/>
+                                <img src={ catbanner1 } className="img-fluid" alt="m-banner"/>
                                 <div className="small-banner__content position-absolute">
                                     <h4 className="mb-1">Best Sale</h4>
                                     <h5 className="mb-1">Laptop Max</h5>
@@ -59,7 +65,7 @@ const HeroSection = () => {
                                 </div>
                             </Link>
                             <Link className="small-banner position-relative">
-                                <img src="images/catbanner-02.jpg" className="img-fluid" alt="m-banner"/>
+                                <img src={ catbanner2 } className="img-fluid" alt="m-banner"/>
                                 <div className="small-banner__content position-absolute">
                                     <h4 className="mb-1">New Arrival</h4>
                                     <h5 className="mb-1">Buy IPad Air</h5>
@@ -67,7 +73,7 @@ const HeroSection = () => {
                                 </div>
                             </Link>
                             <Link className="small-banner position-relative">
-                                <img src="images/catbanner-03.jpg" className="img-fluid" alt="m-banner"/>
+                                <img src={ catbanner3 } className="img-fluid" alt="m-banner"/>
                                 <div className="small-banner__content position-absolute">
                                     <h4 className="mb-1">15% OFF</h4>
                                     <h5 className="mb-1">Smartwatch 7</h5>
@@ -75,7 +81,7 @@ const HeroSection = () => {
                                 </div>
                             </Link>
                             <Link className="small-banner position-relative">
-                                <img src="images/catbanner-04.jpg" className="img-fluid" alt="m-banner"/>
+                                <img src={catbanner4} className="img-fluid" alt="m-banner"/>
                                 <div className="small-banner__content position-absolute">
                                     <h4 className="mb-1">Free Engraving</h4>
                                     <h5 className="mb-1">AirPods Max</h5>
