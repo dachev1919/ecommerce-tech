@@ -82,6 +82,7 @@
     background-color: var(--color-131921);
     border-radius: 0;
     padding: 0;
+    border: none;
 }
 
 .header-bottom .dropdown button.btn-secondary {
