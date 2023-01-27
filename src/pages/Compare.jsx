@@ -21,7 +21,7 @@ const Compare = () => {
     return (
         <>
             <Meta title="Compare" canonical={ "compare/" }/>
-            <Breadcrumb title="Compare"/>
+            <Breadcrumb breadcrumbs={[{title: 'Compare', link: '/ecommerce-tech/compare'}]}/>
             <section className="compare d-flex align-items-center">
                 <Container fluid='xxl'>
                     {

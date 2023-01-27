@@ -18,7 +18,7 @@ const Login = () => {
     return (
         <>
             <Meta title="Login" canonical={ "login/" }/>
-            <Breadcrumb title="Login"/>
+            <Breadcrumb breadcrumbs={[{title: 'Login', link: '/ecommerce-tech/login'}]}/>
             <section className="login">
                 <Container fluid='xxl'>
                     <div className="login__wrapper text-center card-wrapper">

@@ -1,13 +1,23 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Breadcrumb = ({title}) => {
+const Breadcrumb = ({breadcrumbs}) => {
     return (
         <div className='breadcrumb py-4 mb-0 text-center'>
             <Container fluid='xxl'>
                 <Row>
                     <Col className='col-12'>
-                        <p className='text-dark mb-0'><Link className='text-dark' to={'/ecommerce-tech'}>Home</Link> / {title}</p>
+                        <p className='mb-0'>
+                            <Link to={'/ecommerce-tech'}>Home</Link>
+                            {
+                                breadcrumbs.map((breadcrumb, index) => (
+                                    <>
+                                        /
+                                        <Link key={index} to={breadcrumb.link}>{breadcrumb.title}</Link>
+                                    </>
+                                ))
+                            }
+                        </p>
                     </Col>
                 </Row>
             </Container>

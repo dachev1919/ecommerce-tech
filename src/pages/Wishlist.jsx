@@ -46,7 +46,7 @@ const Wishlist = () => {
     return (
         <>
             <Meta title="Wishlist" canonical={ "wishlist/" }/>
-            <Breadcrumb title="Wishlist"/>
+            <Breadcrumb breadcrumbs={[{title: 'Wishlist', link: '/ecommerce-tech/wishlist'}]}/>
             <section className="wishlist d-flex align-items-center">
                 <Container fluid='xxl'>
                     <Row>

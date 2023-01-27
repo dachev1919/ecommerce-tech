@@ -51,7 +51,7 @@ const ProductDetails = () => {
     return (
         <>
             <Meta canonical={ `product/${product.id}` } title={product.title} />
-            <Breadcrumb title={product.title} />
+            <Breadcrumb breadcrumbs={[{title: 'Store', link: "/ecommerce-tech/store"}, {title: product.title, link: `/ecommerce-tech/store/${product.id}`}]} />
             <section className="product-details">
                 <Container fluid='xxl' className='card-wrapper'>
                     <Row>

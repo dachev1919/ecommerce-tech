@@ -21,7 +21,7 @@ const Signup = () => {
     return (
         <>
             <Meta title="Sign Up" canonical={ "signup/" }/>
-            <Breadcrumb title="Signup"/>
+            <Breadcrumb breadcrumbs={[{title: 'Signup', link: '/ecommerce-tech/signup'}]}/>
             <section className="signup">
                 <Container fluid='xxl'>
                     <div className="signup__wrapper text-center card-wrapper">

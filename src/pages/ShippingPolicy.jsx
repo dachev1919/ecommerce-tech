@@ -6,7 +6,7 @@ const ShippingPolicy = () => {
     return (
         <>
             <Meta title="Shipping Policy" canonical={ "shipping-policy/" }/>
-            <Breadcrumb title="Shipping Policy"/>
+            <Breadcrumb breadcrumbs={[{title: 'Shipping Policy', link: '/ecommerce-tech/shipping-policy'}]}/>
             <section className="shipping policy">
                 <Container fluid='xxl'>
                     <div className="shipping__wrapper card-wrapper">

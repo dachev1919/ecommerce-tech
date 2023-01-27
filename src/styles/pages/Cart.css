@@ -12,3 +12,29 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
 }
+
+.cart__header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-ededed);
+}
+
+.cart__product-info a:hover {
+    opacity: .8;
+}
+
+.cart__footer p,
+.cart__header h5,
+.cart__product-info p {
+    color: var(--color-777777);
+}
+
+.cart__footer p span {
+    font-weight: 400;
+}
+
+.cart__footer {
+    border-top: 1px solid var(--color-ededed);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}

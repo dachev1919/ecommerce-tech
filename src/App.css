@@ -156,6 +156,24 @@ html .form-check-label {
     color: var(--color-777777);
 }
 
+.breadcrumb a {
+    padding: 0 .5rem;
+}
+
+.breadcrumb p,
+.breadcrumb a:not(:last-child) {
+    color: var(--color-777777);
+}
+
+.breadcrumb a:not(:last-child):hover {
+    color: var(--color-131921);
+}
+
+.breadcrumb a:last-child {
+    pointer-events: none;
+    color: var(--color-131921);
+}
+
 @media screen and (max-width: 1399px) {
     .card-wrapper:not(.without-margin) {
         margin-left: calc(var(--bs-gutter-x) * .5);
@@ -164,21 +182,21 @@ html .form-check-label {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    html .btn {
+    html .btn:not(.without-responsive) {
         padding: .45rem 1.5rem;
         font-size: .9rem;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    html .btn {
+    html .btn:not(.without-responsive) {
         padding: .4rem 1.4rem;
         font-size: .85rem;
     }
 }
 
 @media screen and (max-width: 575px) {
-    html .btn {
+    html .btn:not(.without-responsive) {
         padding: .3rem 1.2rem;
         font-size: .75rem;
     }

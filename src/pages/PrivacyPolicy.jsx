@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
         <>
             <Meta title="Privacy Policy" canonical={ "privacy-policy/" }/>
-            <Breadcrumb title="Privacy Policy"/>
+            <Breadcrumb breadcrumbs={[{title: 'Privacy Policy', link: '/ecommerce-tech/privacy-policy'}]}/>
             <section className="privacy-policy policy">
                 <Container fluid='xxl'>
                     <div className="privacy-policy__wrapper card-wrapper">

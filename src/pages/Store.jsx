@@ -212,7 +212,7 @@ const Store = () => {
     return (
         <>
             <Meta title="Our Store" canonical="store/"/>
-            <Breadcrumb title="Our Store"/>
+            <Breadcrumb breadcrumbs={[{title: 'Store', link: '/ecommerce-tech/store'}]}/>
             <div className="store pb-5">
                 <Container fluid="xxl">
                     <Row>

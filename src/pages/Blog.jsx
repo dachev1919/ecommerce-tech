@@ -4,6 +4,7 @@ import { BLOG } from "../assets/data/blog";
 import BlogCard from "../components/UI/BlogCard";
 import '../styles/pages/Blog.css';
 import { useEffect } from "react";
+import Breadcrumb from "../components/Breadcrumb";
 
 const Blog = () => {
     useEffect(() => {
@@ -13,6 +14,7 @@ const Blog = () => {
     return (
         <>
             <Meta title='Blog' canonical={'blog/'} />
+            <Breadcrumb breadcrumbs={[{title: 'Blog', link: '/ecommerce-tech/blog'}]}/>
             <section className="blog">
                 <Container fluid='xxl'>
                     <h3 className='section-heading text-center'>Blog</h3>

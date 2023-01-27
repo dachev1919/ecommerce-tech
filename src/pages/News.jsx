@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { BLOG } from "../assets/data/blog";
 import { Container, Row } from "react-bootstrap";
 import { useEffect } from "react";
+import Breadcrumb from "../components/Breadcrumb";
 
 const News = () => {
     const { id } = useParams();
@@ -23,6 +24,7 @@ const News = () => {
     return (
         <>
             <Meta canonical={ `blog/${ news.id }` } title={ news.title }/>
+            <Breadcrumb breadcrumbs={[{title: 'Blog', link: '/ecommerce-tech/blog'}, {title: news.title, link: `/ecommerce-tech/blog/${ id}`}]}/>
             <section className="news">
                 <Container fluid='xxl'>
                     <Row className="col-8 m-auto">

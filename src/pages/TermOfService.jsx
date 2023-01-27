@@ -6,7 +6,7 @@ const TermOfService = () => {
     return (
         <>
             <Meta title="Term Of Service" canonical={ "term-policy/" }/>
-            <Breadcrumb title="Term Of Service"/>
+            <Breadcrumb breadcrumbs={[{title: 'Term Of Service', link: '/ecommerce-tech/term-policy'}]}/>
             <section className="term-of-service policy">
                 <Container fluid='xxl'>
                     <div className="term-of-service__wrapper card-wrapper">

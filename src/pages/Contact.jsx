@@ -22,7 +22,7 @@ const Contact = () => {
 
     return (
         <>
-            <Breadcrumb title="Contact" path=""/>
+            <Breadcrumb breadcrumbs={[{title: 'Contact', link: '/ecommerce-tech/contact'}]}/>
             <section className="contact">
                 <Container fluid='xxl'>
                     <iframe

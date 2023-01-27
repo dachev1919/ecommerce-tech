@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     return (
         <>
             <Meta title="Forgot Password" canonical={ "forgot/" }/>
-            <Breadcrumb title="Forgot"/>
+            <Breadcrumb breadcrumbs={[{title: 'Forgot', link: '/ecommerce-tech/forgot'}]}/>
             <section className="forgot">
                 <Container fluid='xxl'>
                     <div className="forgot__wrapper text-center card-wrapper">

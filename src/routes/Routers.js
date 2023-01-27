@@ -16,6 +16,7 @@ import TermOfService from "../pages/TermOfService";
 import ShippingPolicy from "../pages/ShippingPolicy";
 import RefundPolicy from "../pages/RefundPolicy";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import Checkout from "../pages/Checkout";
 
 const Routers = () => {
     return (
@@ -38,6 +39,7 @@ const Routers = () => {
             <Route path="/ecommerce-tech/refund-policy" element={ <RefundPolicy /> }/>
             <Route path="/ecommerce-tech/shipping-policy" element={ <ShippingPolicy /> }/>
             <Route path="/ecommerce-tech/term-policy" element={ <TermOfService /> }/>
+            <Route path="/ecommerce-tech/checkout" element={ <Checkout /> }/>
         </Routes>
     );
 };

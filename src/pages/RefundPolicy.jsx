@@ -6,7 +6,7 @@ const RefundPolicy = () => {
     return (
         <>
             <Meta title="Refund Policy" canonical={ "refund-policy/" }/>
-            <Breadcrumb title="Refund Policy"/>
+            <Breadcrumb breadcrumbs={[{title: 'Refund Policy', link: '/ecommerce-tech/refund-policy'}]}/>
             <section className="refund-policy policy">
                 <Container fluid='xxl'>
                     <div className="refund-policy__wrapper card-wrapper">
