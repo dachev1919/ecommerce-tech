@@ -60,7 +60,7 @@ const Wishlist = () => {
                                                     <Link to={ `/ecommerce-tech/store/${ product.id }` }><img
                                                         src={ product.image } alt="product"/></Link>
                                                     <img onClick={ () => addToWishlistHandler(product) }
-                                                         className="wishlist__product-cross" src="/images/cross.svg"
+                                                         className="wishlist__product-cross" src="images/cross.svg"
                                                          alt="cross"/>
                                                 </div>
                                                 <div className="wishlist__product-info">

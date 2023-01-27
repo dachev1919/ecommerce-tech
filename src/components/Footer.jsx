@@ -11,7 +11,7 @@ const Footer = () => {
                     <Row>
                         <Col className="col-12 mb-4 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start" md='5'>
                             <div className="footer-top-data d-flex align-items-center gap-30">
-                                <img src="/images/newsletter.png" alt="newsletter"/>
+                                <img src="images/newsletter.png" alt="newsletter"/>
                                 <h2 className="mb-0 text-white">Sign Up For Newsletter</h2>
                             </div>
                         </Col>

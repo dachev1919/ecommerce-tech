@@ -5,35 +5,35 @@ import "../../styles/components/home/MarquesSection.css";
 const MARQUE = [
     {
         id: 101,
-        "image": "/images/brand-01.png",
+        "image": "images/brand-01.png",
     },
     {
         id: 102,
-        "image": "/images/brand-02.png",
+        "image": "images/brand-02.png",
     },
     {
         id: 103,
-        "image": "/images/brand-03.png",
+        "image": "images/brand-03.png",
     },
     {
         id: 104,
-        "image": "/images/brand-04.png",
+        "image": "images/brand-04.png",
     },
     {
         id: 105,
-        "image": "/images/brand-05.png",
+        "image": "images/brand-05.png",
     },
     {
         id: 106,
-        "image": "/images/brand-06.png",
+        "image": "images/brand-06.png",
     },
     {
         id: 107,
-        "image": "/images/brand-07.png",
+        "image": "images/brand-07.png",
     },
     {
         id: 108,
-        "image": "/images/brand-08.png",
+        "image": "images/brand-08.png",
     },
 ];
 

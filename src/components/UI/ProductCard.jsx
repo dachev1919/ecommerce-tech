@@ -65,9 +65,9 @@ const ProductCard = ({ product }) => {
             </div>
             <div className="product-card__action-bar position-absolute">
                 <div className="d-flex flex-column gap-1">
-                    <div className='product-card__action-button' onClick={() => addToWishlist()}><img style={{ width: '16px' }} src={ `${inWishlist ? '/images/wish-black.svg' : '/images/wish.svg'}` } alt="wish"/></div>
-                    <div className='product-card__action-button' onClick={() => addToCartHandler()}><img src="/images/add-cart.svg" alt="add"/></div>
-                    <Link className='product-card__action-button' to={`/ecommerce-tech/store/${ id }`}><img src="/images/view.svg" alt="view"/></Link>
+                    <div className='product-card__action-button' onClick={() => addToWishlist()}><img style={{ width: '16px' }} src={ `${inWishlist ? 'images/wish-black.svg' : 'images/wish.svg'}` } alt="wish"/></div>
+                    <div className='product-card__action-button' onClick={() => addToCartHandler()}><img src="images/add-cart.svg" alt="add"/></div>
+                    <Link className='product-card__action-button' to={`/ecommerce-tech/store/${ id }`}><img src="images/view.svg" alt="view"/></Link>
                     <div className='product-card__action-button' onClick={() => addToCompare()}>
                         {
                             inCompare ? <IoGitCompareSharp /> : <IoGitCompareOutline />

@@ -140,7 +140,7 @@ const ProductDetails = () => {
                                 </p>
                                 <div className="d-flex gap-3 product-details__actions mt-4">
                                     <div className='d-flex align-items-center gap-2' onClick={() => addToWishlist()}>
-                                        <img style={{ width: '16px' }} src={ `${inWishlist ? '/images/wish-black.svg' : '/images/wish.svg'}` } alt="wish"/>
+                                        <img style={{ width: '16px' }} src={ `${inWishlist ? 'images/wish-black.svg' : 'images/wish.svg'}` } alt="wish"/>
                                         <p className='m-0'>Add To Wishlist</p>
                                     </div>
                                     <div className='d-flex align-items-center gap-2' onClick={() => addToCompare()}>

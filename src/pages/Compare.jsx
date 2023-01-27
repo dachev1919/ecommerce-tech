@@ -48,7 +48,7 @@ const Compare = () => {
                                                         <Link to={ `/ecommerce-tech/store/${ product.id }` }><img
                                                             src={ product.image } alt="product"/></Link>
                                                         <img onClick={ () => addToCompareHandler(product) }
-                                                             className="compare__product-cross" src="/images/cross.svg"
+                                                             className="compare__product-cross" src="images/cross.svg"
                                                              alt="cross"/>
                                                     </div>
                                                     <div className="compare__product-content text-center">

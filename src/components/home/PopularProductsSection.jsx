@@ -13,7 +13,7 @@ const PopularProductsSection = ({ products }) => {
                         <Link to={ "/ecommerce-tech" }>
                             <div className="popular-products__banner card-wrapper without-margin position-relative">
                                 <div className="popular-products__banner-image">
-                                    <img src="/images/banner.png" alt=""/>
+                                    <img src="images/banner.png" alt=""/>
                                 </div>
                                 <div className="popular-products__banner-content">
                                     <h3 className="popular-products__banner-subtitle text-white mb2">10% OFF</h3>

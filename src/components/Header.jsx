@@ -66,25 +66,25 @@ const Header = () => {
                                 </div>
                                 <div>
                                     <Link to='/ecommerce-tech/compare' className="d-flex text-center text-lg-start flex-column flex-lg-row align-items-center gap-1 gap-lg-2 text-white">
-                                        <img src="/images/compare.svg" alt="compare"/>
+                                        <img src="images/compare.svg" alt="compare"/>
                                         <p className="mb-0 d-none d-md-block">Compare <br/> Products</p>
                                     </Link>
                                 </div>
                                 <div>
                                     <Link to='/ecommerce-tech/wishlist' className="d-flex text-center text-lg-start flex-column flex-lg-row align-items-center gap-1 gap-lg-2 text-white">
-                                        <img src="/images/wishlist.svg" alt="wishlist"/>
+                                        <img src="images/wishlist.svg" alt="wishlist"/>
                                         <p className="mb-0 d-none d-md-block">Favourite <br/> Wishlist</p>
                                     </Link>
                                 </div>
                                 <div>
                                     <Link to='/ecommerce-tech/login' className="d-flex text-center text-lg-start flex-column flex-lg-row align-items-center gap-1 gap-lg-2 text-white">
-                                        <img src="/images/user.svg" alt="wishlist"/>
+                                        <img src="images/user.svg" alt="wishlist"/>
                                         <p className="mb-0 d-none d-md-block">Login <br/> My Account</p>
                                     </Link>
                                 </div>
                                 <div>
                                     <Link to='/ecommerce-tech/cart' className="d-flex text-center text-lg-start flex-row flex-md-column flex-lg-row align-items-center gap-1 gap-lg-2 text-white position-relative">
-                                        <img src="/images/cart.svg" alt="wishlist"/>
+                                        <img src="images/cart.svg" alt="wishlist"/>
                                         <div className="d-flex flex-column gap-1">
                                             <span className="badge bg-white text-dark">{ cartTotalQuantity }</span>
                                             <p className="mb-0 d-none d-md-block">$ { cartTotalAmount }</p>
@@ -102,7 +102,7 @@ const Header = () => {
             <header ref={headerBottom} className="header-bottom">
                 <div className="overlay d-block d-md-none" onClick={() => mobileMenuHandler()}></div>
                 <Container fluid="xxl" className='position-relative'>
-                    <GrClose className='header-bottom__close' onClick={() => mobileMenuHandler()} />
+                    <GrClose className='header-bottom__close d-block d-md-none' onClick={() => mobileMenuHandler()} />
                     <Row>
                         <Col className="col-12">
 
