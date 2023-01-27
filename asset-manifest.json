@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecommerce-tech/static/css/main.a9b9f761.css",
-    "main.js": "/ecommerce-tech/static/js/main.9561c157.js",
+    "main.js": "/ecommerce-tech/static/js/main.cff4325c.js",
     "static/media/blog-2.jpg": "/ecommerce-tech/static/media/blog-2.a6237504010980394e9b.jpg",
     "static/media/blog-4.jpg": "/ecommerce-tech/static/media/blog-4.ed4e34f2bc5045647f63.jpg",
     "static/media/blog-3.jpg": "/ecommerce-tech/static/media/blog-3.5b8c240b893831e3a728.jpg",
@@ -36,10 +36,10 @@
     "static/media/user.svg": "/ecommerce-tech/static/media/user.cd86e0566bbf017c8167249084d368e3.svg",
     "static/media/cross.svg": "/ecommerce-tech/static/media/cross.bf9c2c127cb9cecabfe621ba624f3814.svg",
     "main.a9b9f761.css.map": "/ecommerce-tech/static/css/main.a9b9f761.css.map",
-    "main.9561c157.js.map": "/ecommerce-tech/static/js/main.9561c157.js.map"
+    "main.cff4325c.js.map": "/ecommerce-tech/static/js/main.cff4325c.js.map"
   },
   "entrypoints": [
     "static/css/main.a9b9f761.css",
-    "static/js/main.9561c157.js"
+    "static/js/main.cff4325c.js"
   ]
 }
