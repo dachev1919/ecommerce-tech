@@ -20,7 +20,7 @@ const SpecialSection = ({ products }) => {
                                           price,
                                           rating,
                                       }, index) => (
-                            <Col key={ Number(id) + Number(index) * 200 } className="col-4">
+                            <Col key={ Number(id) + Number(index) * 200 } className="col-12 mb-4" xxl='4' sm='6'>
                                 <SpecialProduct
                                     id={ id }
                                     image={ image }

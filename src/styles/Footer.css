@@ -53,3 +53,11 @@ footer .social-icons a {
     padding: .7rem;
     border-radius: 50%;
 }
+
+/*RESPONSIVE PART*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    footer .social-icons a {
+        padding: .4rem;
+    }
+}
+/*END RESPONSIVE PART*/

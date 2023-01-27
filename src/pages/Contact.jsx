@@ -23,7 +23,7 @@ const Contact = () => {
     return (
         <>
             <Breadcrumb breadcrumbs={[{title: 'Contact', link: '/ecommerce-tech/contact'}]}/>
-            <section className="contact">
+            <section className="contact py-5">
                 <Container fluid='xxl'>
                     <iframe
                         title="google"
@@ -35,7 +35,7 @@ const Contact = () => {
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                     <div
-                        className="contact__form mt-5 card-wrapper d-flex flex-wrap align-items-start justify-content-between">
+                        className="contact__form mt-5 card-wrapper without-margin d-flex flex-wrap align-items-start justify-content-between">
                         <div className="w-50 contact__form-left">
                             <h4 className="section-heading mt-2">Contact</h4>
                             <form onSubmit={ e => formSubmitHandler(e) }>

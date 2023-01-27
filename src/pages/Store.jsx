@@ -216,8 +216,8 @@ const Store = () => {
             <div className="store pb-5">
                 <Container fluid="xxl">
                     <Row>
-                        <Col className="col-3">
-                            <div className="category-filter card-wrapper mb-4">
+                        <Col className="col-12" sm='5' md='4' lg='3'>
+                            <div className="category-filter card-wrapper without-margin mb-4">
                                 <h3 className="filter-title">Shop By Categories</h3>
                                 <ul>
                                     <li className="mb-2" onClick={ () => categoriesFilterHandler("all") }>All</li>
@@ -228,7 +228,7 @@ const Store = () => {
                                 </ul>
                             </div>
 
-                            <div className="card-wrapper mb-4">
+                            <div className="card-wrapper without-margin mb-4">
                                 <h3 className="filter-title">Filter By</h3>
 
                                 <div className="filter-availability mb-4">
@@ -375,7 +375,7 @@ const Store = () => {
                                 </div>
                             </div>
 
-                            <div className="card-wrapper mb-4">
+                            <div className="card-wrapper without-margin mb-4">
                                 <h3 className="filter-title">Product Tags</h3>
 
                                 <div className="filter-tags">
@@ -406,7 +406,7 @@ const Store = () => {
                                 </div>
                             </div>
 
-                            <div className="card-wrapper">
+                            <div className="card-wrapper without-margin">
                                 <h3 className="filter-title">Random Product</h3>
 
                                 {
@@ -416,8 +416,8 @@ const Store = () => {
                                 }
                             </div>
                         </Col>
-                        <Col className="col-9">
-                            <div className="category-header card-wrapper mb-4 d-flex justify-content-between">
+                        <Col className="col-12 mt-4 mt-sm-0" sm='7' md='8' lg='9'>
+                            <div className="category-header card-wrapper without-margin mb-4 d-flex justify-content-between">
                                 <div className="category-header__left">
                                     <div className="category-header__sort-by d-flex align-items-center gap-3">
                                         <p className="mb-0">Sort By:</p>
@@ -429,7 +429,7 @@ const Store = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className="category-header__right d-flex align-items-center gap-3">
+                                <div className="category-header__right align-items-center gap-3 d-none d-lg-flex">
                                     <p className="mb-0">{ products.length } products</p>
                                     <div className="category-header__grids d-flex align-items-center gap-2">
                                         <div

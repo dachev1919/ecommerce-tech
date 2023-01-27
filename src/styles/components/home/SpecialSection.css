@@ -1,0 +1,14 @@
+/*RESPONSIVE PART*/
+@media screen and (max-width: 991px) {
+    .special-product > div {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .special-product__title {
+        font-size: .8rem;
+    }
+}
+/*END RESPONSIVE PART*/

@@ -9,9 +9,9 @@ const PopularProductsSection = ({ products }) => {
             <Container fluid="xxl">
                 <h3 className="section-heading">Our Popular Products</h3>
                 <Row>
-                    <Col className="col-3">
+                    <Col className="col-12" sm='6' lg='3'>
                         <Link to={ "/ecommerce-tech" }>
-                            <div className="popular-products__banner card-wrapper position-relative">
+                            <div className="popular-products__banner card-wrapper without-margin position-relative">
                                 <div className="popular-products__banner-image">
                                     <img src="/images/banner.png" alt=""/>
                                 </div>
@@ -26,7 +26,7 @@ const PopularProductsSection = ({ products }) => {
                     </Col>
                     {
                         products.slice(0, 3).map((product, index) => (
-                            <Col key={ Number(product.id) + index * 3732 } className="col-3">
+                            <Col key={ Number(product.id) + index * 3732 } className="col-12" sm='6' lg='3'>
                                 <ProductCard product={product} />
                             </Col>
                         ))

@@ -18,3 +18,19 @@
 .contact__info a:hover * {
     color: var(--color-bf4800);
 }
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 991px) {
+    .contact__form {
+        flex-direction: column-reverse;
+    }
+
+    .contact__form .w-50 {
+        width: 100%!important;
+    }
+
+    .contact__form-right {
+        padding: 0;
+    }
+}
+/*END RESPONSIVE PART*/

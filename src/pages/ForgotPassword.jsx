@@ -19,7 +19,7 @@ const ForgotPassword = () => {
             <Breadcrumb breadcrumbs={[{title: 'Forgot', link: '/ecommerce-tech/forgot'}]}/>
             <section className="forgot">
                 <Container fluid='xxl'>
-                    <div className="forgot__wrapper text-center card-wrapper">
+                    <div className="forgot__wrapper text-center card-wrapper without-margin">
                         <h3 className="mb-3">Reset Your Password</h3>
                         <p className="mb-4">We will send you an email to reset your password</p>
                         <form className="forgot__form" onSubmit={ (e) => formSubmitHandler(e) }>

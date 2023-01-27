@@ -11,7 +11,7 @@ const HeroSection = () => {
         <section className="hero-section">
             <Container fluid="xxl">
                 <Row>
-                    <Col className="col-6">
+                    <Col className="col-12" lg='6'>
                         <Swiper
                             className="main-banner position-relative"
                             effect={ "coverflow" }
@@ -32,8 +32,8 @@ const HeroSection = () => {
                                 <div className="main-banner__content position-absolute">
                                     <h4>Supercharged For Pros.</h4>
                                     <h5>iPad S13+ Pro.</h5>
-                                    <p>From $999.00 or $41.62/mo.<br/>for 24 mo. Footnote*</p>
-                                    <Link className="btn btn-primary mt-4">Buy Now</Link>
+                                    <p className='m-0'>From $999.00 or $41.62/mo.<br/>for 24 mo. Footnote*</p>
+                                    <Link className="btn btn-primary mt-3 mt-md-4">Buy Now</Link>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -41,14 +41,14 @@ const HeroSection = () => {
                                 <div className="main-banner__content position-absolute">
                                     <h4>Supercharged For Pros.</h4>
                                     <h5>iPad S13+ Pro.</h5>
-                                    <p>From $999.00 or $41.62/mo.<br/>for 24 mo. Footnote*</p>
-                                    <Link className="btn btn-primary mt-4">Buy Now</Link>
+                                    <p className='m-0'>From $999.00 or $41.62/mo.<br/>for 24 mo. Footnote*</p>
+                                    <Link className="btn btn-primary mt-3 mt-md-4">Buy Now</Link>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
 
                     </Col>
-                    <Col className="col-6">
+                    <Col className="col-12" lg='6'>
                         <div className="small-banners d-grid">
                             <Link className="small-banner position-relative">
                                 <img src="/images/catbanner-01.jpg" className="img-fluid" alt="m-banner"/>

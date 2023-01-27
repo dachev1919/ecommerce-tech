@@ -60,11 +60,11 @@ const CategoriesSection = () => {
                 <Row>
                     <Col className="col-12">
                         <div
-                            className="categories card-wrapper d-flex flex-wrap justify-content-between align-items-center">
+                            className="categories card-wrapper without-margin d-flex flex-wrap justify-content-between align-items-center">
                             {
                                 CATEGORIES.map(category => (
                                     <Link key={ category.id } id={ category.id }
-                                          className="d-flex gap-30 align-items-center justify-content-between">
+                                          className="d-flex gap-2 gap-lg-3 align-items-center justify-content-between">
                                         <div>
                                             <h6>{ category.title }</h6>
                                             <p>{ category.text }</p>

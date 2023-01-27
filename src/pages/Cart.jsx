@@ -29,7 +29,7 @@ const Cart = () => {
                             <>
                                 <div className="cart__header">
                                     <Row>
-                                        <Col className='col-4' md='6'>
+                                        <Col className='col-3' sm='4' md='6'>
                                             <h5 className='text-uppercase'>Product</h5>
                                         </Col>
                                         <Col className='col-3 text-center' md='2'>
@@ -38,7 +38,7 @@ const Cart = () => {
                                         <Col className='col-3 text-center' md='2'>
                                             <h5 className='text-uppercase'>Total</h5>
                                         </Col>
-                                        <Col className='col-2 text-center'>
+                                        <Col className='col-3 text-center' sm='2'>
                                             <h5 className='text-uppercase'>Action</h5>
                                         </Col>
                                     </Row>
@@ -47,7 +47,7 @@ const Cart = () => {
                                     {
                                         products.map(product => (
                                             <Row key={product.id} className='cart__product'>
-                                                <Col className='col-4 d-flex gap-2 gap-md-5 align-items-center flex-column flex-md-row' md='6'>
+                                                <Col className='col-3 d-flex gap-2 gap-md-5 align-items-center text-sm-center text-md-start flex-column flex-md-row' sm='4' md='6'>
                                                     <div className="cart__product-image">
                                                         <Link to={ `/ecommerce-tech/store/${ product.id }` }><img src={ product.image } alt="product"/></Link>
                                                     </div>
@@ -68,9 +68,9 @@ const Cart = () => {
                                                         <p><span>Category: </span>{product.category}</p>
                                                     </div>
                                                 </Col>
-                                                <Col className='col-3 text-center' md='2'>$ {product.price}</Col>
-                                                <Col className='col-3 text-center' md='2'>$ {product.totalPrice}</Col>
-                                                <Col className='col-2 text-center'>
+                                                <Col className='col-3 text-center d-flex d-sm-block justify-content-center align-items-center' md='2'>$ {product.price}</Col>
+                                                <Col className='col-3 text-center d-flex d-sm-block justify-content-center align-items-center' md='2'>$ {product.totalPrice}</Col>
+                                                <Col className='col-3 text-center d-flex d-sm-block justify-content-center align-items-center' sm='2'>
                                                     <button onClick={() => deleteProductHandler(product.id)} className='btn btn-primary' style={{ padding: '.4rem .5rem', lineHeight: '100%' }}>
                                                         <RiDeleteBin5Line/>
                                                     </button>

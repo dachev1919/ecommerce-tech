@@ -46,3 +46,23 @@
 .banners .row > div:not(:first-child) * {
     color: var(--color-131921);
 }
+
+.banners a {
+    width: 100%;
+}
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 991px) {
+    .banners .col-12 {
+        margin-bottom: calc(var(--bs-gutter-x) * 1);
+    }
+}
+@media screen and (max-width: 575px) {
+    .banners__banner-content {
+        top: 2rem;
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+/*END RESPONSIVE PART*/

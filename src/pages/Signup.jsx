@@ -24,7 +24,7 @@ const Signup = () => {
             <Breadcrumb breadcrumbs={[{title: 'Signup', link: '/ecommerce-tech/signup'}]}/>
             <section className="signup">
                 <Container fluid='xxl'>
-                    <div className="signup__wrapper text-center card-wrapper">
+                    <div className="signup__wrapper text-center card-wrapper without-margin">
                         <h3 className='mb-4'>Sign Up</h3>
                         <form className='signup__form' onSubmit={(e) => formSubmitHandler(e)}>
                             <div>

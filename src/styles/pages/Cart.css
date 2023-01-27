@@ -4,6 +4,7 @@
 
 .cart__product-image img {
     max-width: 70px;
+    width: 70px;
     box-shadow: 0 0 10px #0000001a;
 }
 
@@ -38,3 +39,19 @@
     margin-top: 2rem;
     padding-top: 2rem;
 }
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 576px) {
+    .cart .cart__header h5 {
+        font-size: .8rem;
+    }
+
+    .cart__footer p, .cart__header h5, .cart__product-info p {
+        font-size: .8rem;
+        text-align: center;
+    }
+    .cart__product-info > p {
+        display: none;
+    }
+}
+/*END RESPONSIVE PART*/

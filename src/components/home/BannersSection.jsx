@@ -41,9 +41,9 @@ const BannersSection = () => {
                 <Row>
                     {
                         BANNERS.map(({ id, subtitle, title, text, image }) => (
-                            <Col key={ id } className="col-3">
+                            <Col key={ id } className="col-12" lg='3' sm='6'>
                                 <Link to={ "/ecommerce-tech" }>
-                                    <div className="banners__banner card-wrapper position-relative">
+                                    <div className="banners__banner card-wrapper without-margin position-relative">
                                         <div className="banners__banner-image">
                                             <img src={ image } alt=""/>
                                         </div>

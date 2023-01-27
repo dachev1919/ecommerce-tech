@@ -7,7 +7,7 @@ function truncate(str, n) {
 const BlogCard = ({news}) => {
     const { id, image, date, title, shortDescr } = news;
     return (
-        <div className="blog-card card-wrapper rounded-3">
+        <div className="blog-card card-wrapper without-margin rounded-3">
             <div className="blog-card__image">
                 <Link to={ `/ecommerce-tech/blog/${id}` }><img src={ image } alt=""/></Link>
             </div>

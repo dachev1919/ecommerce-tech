@@ -54,8 +54,8 @@ const Wishlist = () => {
                             wishlist.length
                                 ? (
                                     wishlist.map(product => (
-                                        <Col key={ product.id } className="col-3">
-                                            <div className="wishlist__product card-wrapper">
+                                        <Col key={ product.id } className="col-12 text-center" sm='6' md='4' lg='3'>
+                                            <div className="wishlist__product card-wrapper without-margin mb-4">
                                                 <div className="wishlist__product-image position-relative">
                                                     <Link to={ `/ecommerce-tech/store/${ product.id }` }><img
                                                         src={ product.image } alt="product"/></Link>

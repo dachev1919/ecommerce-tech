@@ -9,7 +9,7 @@ const TermOfService = () => {
             <Breadcrumb breadcrumbs={[{title: 'Term Of Service', link: '/ecommerce-tech/term-policy'}]}/>
             <section className="term-of-service policy">
                 <Container fluid='xxl'>
-                    <div className="term-of-service__wrapper card-wrapper">
+                    <div className="term-of-service__wrapper card-wrapper without-margin">
                         <div className="term-of-service__item policy__item">
                             <h5>The Standard Lorem Ipsum Passage</h5>
                             <p>

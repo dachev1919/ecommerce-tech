@@ -33,6 +33,7 @@
 .compare__product-image img:not(.compare__product-cross) {
     width: 200px;
     height: 200px;
+    object-fit: contain;
 }
 
 .compare__titles {
@@ -54,6 +55,7 @@
     margin-bottom: 0;
     padding: 1rem 1rem;
     line-height: 100%;
+    min-width: max-content;
     width: 100%;
 }
 

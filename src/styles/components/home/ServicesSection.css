@@ -3,5 +3,42 @@
 }
 
 .services img {
-    max-width: 30px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
+
+.services > div {
+    padding: 0 .5rem;
+}
+
+/*RESPONSIVE PART*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .services p {
+        font-size: .75rem;
+    }
+
+    .services h6 {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .services p {
+        display: none;
+    }
+    .services h6 {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .services {
+        flex-direction: column;
+    }
+    .services img {
+        width: 40px;
+        height: 40px;
+    }
+}
+/*END RESPONSIVE PART*/

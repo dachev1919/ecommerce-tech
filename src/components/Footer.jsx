@@ -9,13 +9,13 @@ const Footer = () => {
             <footer className="py-4 newsletter">
                 <Container fluid="xxl">
                     <Row>
-                        <Col className="col-5 d-flex align-items-center">
+                        <Col className="col-12 mb-4 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start" md='5'>
                             <div className="footer-top-data d-flex align-items-center gap-30">
                                 <img src="/images/newsletter.png" alt="newsletter"/>
                                 <h2 className="mb-0 text-white">Sign Up For Newsletter</h2>
                             </div>
                         </Col>
-                        <Col className="col-7">
+                        <Col className="col-12" md='7'>
                             <div className="input-group">
                                 <input
                                     type="text"
@@ -35,7 +35,7 @@ const Footer = () => {
             <footer className="py-4">
                 <Container fluid="xxl">
                     <Row>
-                        <Col className="col-4">
+                        <Col className="col-12 mb-5 mb-md-0" sm='6' md='3' lg='4'>
                             <h5 className="text-white mb-4">Contact Use</h5>
                             <div>
                                 <address className="text-white">
@@ -43,7 +43,7 @@ const Footer = () => {
                                 </address>
                                 <a href="tel:+2311231233" className="mt-3 d-block">+2311231233</a>
                                 <a href="mailto:admin@admin.com" className="mt-3 d-block">admin@admin.com</a>
-                                <div className="social-icons gap-30 d-flex mt-3 align-items-center">
+                                <div className="social-icons gap-3 d-flex mt-3 align-items-center">
                                     <a href="/">
                                         <BsLinkedin className="text-white fs-6"/>
                                     </a>
@@ -59,7 +59,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col className="col-3">
+                        <Col className="col-12 mb-5 mb-md-0" sm='6' md='3'>
                             <h5 className="text-white mb-4">Information</h5>
                             <div className="footer-links flex-column d-flex">
                                 <Link to="/ecommerce-tech/privacy-policy" className="text-white py-2 mn-1">Privacy Policy</Link>
@@ -69,17 +69,17 @@ const Footer = () => {
                                 <Link to="/ecommerce-tech/blog" className="text-white py-2 mn-1">Blogs</Link>
                             </div>
                         </Col>
-                        <Col className="col-3">
+                        <Col className="col-12 mb-5 mb-md-0" sm='6' md='3'>
                             <h5 className="text-white mb-4">Account</h5>
                             <div className="footer-links flex-column d-flex">
-                                <Link className="text-white py-2 mn-1">Search</Link>
-                                <Link className="text-white py-2 mn-1">About Us</Link>
-                                <Link className="text-white py-2 mn-1">Faq</Link>
-                                <Link className="text-white py-2 mn-1">Contact</Link>
-                                <Link className="text-white py-2 mn-1">Size Chart</Link>
+                                <Link to='/ecommerce-tech' className="text-white py-2 mn-1">Search</Link>
+                                <Link to='/ecommerce-tech' className="text-white py-2 mn-1">About Us</Link>
+                                <Link to='/ecommerce-tech' className="text-white py-2 mn-1">Faq</Link>
+                                <Link to='/ecommerce-tech' className="text-white py-2 mn-1">Contact</Link>
+                                <Link to='/ecommerce-tech' className="text-white py-2 mn-1">Size Chart</Link>
                             </div>
                         </Col>
-                        <Col className="col-2">
+                        <Col className="col-12 mb-5 mb-md-0" sm='6' md='3' lg='2'>
                             <h5 className="text-white mb-4">Quick Links</h5>
                             <div className="footer-links flex-column d-flex">
                                 <Link to='/ecommerce-tech/store' className="text-white py-2 mn-1">Accessories</Link>

@@ -1,5 +1,5 @@
 import Meta from "../components/Meta";
-import {useState} from "react";
+import { useEffect, useState } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import { Col, Container, Row } from "react-bootstrap";
 import { PRODUCTS } from "../assets/data/products";
@@ -26,6 +26,10 @@ const ProductDetails = () => {
     const [email, setEmail] = useState('');
     const [review, setReview] = useState('');
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [id]);
 
     const formSubmitHandler = e => {
         e.preventDefault();

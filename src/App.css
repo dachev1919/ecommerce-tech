@@ -163,6 +163,7 @@ html .form-check-label {
 .breadcrumb p,
 .breadcrumb a:not(:last-child) {
     color: var(--color-777777);
+    line-height: 150%;
 }
 
 .breadcrumb a:not(:last-child):hover {
@@ -186,6 +187,9 @@ html .form-check-label {
         padding: .45rem 1.5rem;
         font-size: .9rem;
     }
+    section {
+        padding: 2rem 0;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -193,11 +197,17 @@ html .form-check-label {
         padding: .4rem 1.4rem;
         font-size: .85rem;
     }
+    section {
+        padding: 1.5rem 0;
+    }
 }
 
 @media screen and (max-width: 575px) {
     html .btn:not(.without-responsive) {
         padding: .3rem 1.2rem;
         font-size: .75rem;
+    }
+    section {
+        padding: 1rem 0;
     }
 }

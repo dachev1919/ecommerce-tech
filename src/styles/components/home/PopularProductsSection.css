@@ -9,6 +9,10 @@
     transform: scale(1);
 }
 
+.popular-products a {
+    width: 100%;
+}
+
 .popular-products__banner.card-wrapper {
     padding: 0;
     overflow: hidden;
@@ -33,3 +37,26 @@
 .popular-products__banner-text {
     line-height: 150%;
 }
+
+/*RESPONSIVE PART*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .popular-products__banner-content {
+        left: 5%;
+        top: 5%;
+    }
+
+    .popular-products__banner-title {
+        font-size: 1.2rem;
+    }
+
+    .popular-products__banner-text, .popular-products__banner-subtitle {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .popular-products a {
+        margin-bottom: 1.6rem;
+    }
+}
+/*END RESPONSIVE PART*/

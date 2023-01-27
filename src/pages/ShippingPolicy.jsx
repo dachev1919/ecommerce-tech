@@ -9,7 +9,7 @@ const ShippingPolicy = () => {
             <Breadcrumb breadcrumbs={[{title: 'Shipping Policy', link: '/ecommerce-tech/shipping-policy'}]}/>
             <section className="shipping policy">
                 <Container fluid='xxl'>
-                    <div className="shipping__wrapper card-wrapper">
+                    <div className="shipping__wrapper card-wrapper without-margin">
                         <div className="shipping__item policy__item">
                             <h5>The Standard Lorem Ipsum Passage</h5>
                             <p>

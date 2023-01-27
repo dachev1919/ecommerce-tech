@@ -9,7 +9,7 @@ const RefundPolicy = () => {
             <Breadcrumb breadcrumbs={[{title: 'Refund Policy', link: '/ecommerce-tech/refund-policy'}]}/>
             <section className="refund-policy policy">
                 <Container fluid='xxl'>
-                    <div className="refund-policy__wrapper card-wrapper">
+                    <div className="refund-policy__wrapper card-wrapper without-margin">
                         <div className="refund-policy__item policy__item">
                             <h5>The Standard Lorem Ipsum Passage</h5>
                             <p>

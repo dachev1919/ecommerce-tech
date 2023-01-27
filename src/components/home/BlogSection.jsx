@@ -12,7 +12,7 @@ const BlogSection = () => {
                 <Row>
                     {
                         BLOG.map(news => (
-                            <Col key={ news.id } className="col-3">
+                            <Col key={ news.id } className="col-12" sm='6' lg='3'>
                                 <BlogCard news={news} />
                             </Col>
                         ))

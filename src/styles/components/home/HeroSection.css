@@ -92,3 +92,44 @@
 .hero-section .swiper-pagination-bullet-active {
     background: var(--color-131921);
 }
+
+/*RESPONSIVE PART*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .main-banner__content h5 {
+        font-size: 2rem;
+    }
+    .main-banner__content p {
+        font-size: .8rem;
+    }
+
+    .small-banner__content h5 {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hero-section .row {
+        gap: calc(var(--bs-gutter-x) * 1) calc(var(--bs-gutter-x) * 1);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .small-banners {
+        grid-template-columns: 1fr;
+    }
+
+    .main-banner__content h4 {
+        display: none;
+    }
+
+    .main-banner__content h5 {
+        font-size: 1.5rem;
+    }
+
+    .main-banner__content p,
+    .main-banner__content h4 {
+        font-size: .7rem;
+    }
+}
+/*END RESPONSIVE PART*/

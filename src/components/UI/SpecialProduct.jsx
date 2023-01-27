@@ -14,7 +14,7 @@ const SpecialProduct = ({ id, image, secondImage, thirdImage, title, brand, desc
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return (
-        <div className="special-product card-wrapper">
+        <div className="special-product card-wrapper without-margin">
             <div className="d-flex justify-content-between special-product__wrapper">
                 <div className="special-product__images">
                     {/* Main Swiper */ }

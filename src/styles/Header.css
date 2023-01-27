@@ -105,3 +105,202 @@
     background-image: url('/public/images/menu.svg');
     background-repeat: no-repeat;
 }
+
+.header-upper__links .input-group {
+    width: 50%;
+}
+
+.header-upper__links input.form-control {
+    height: 100%;
+}
+
+.header-upper__links .form-control,
+.header-upper__links input.form-control {
+
+    border: none;
+}
+
+.header-upper__burger svg {
+    color: white;
+    opacity: 1;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.header-upper__burger:hover svg {
+    opacity: .8;
+}
+
+.header-bottom__close path {
+    stroke: white;
+}
+
+.header-bottom__close:hover {
+    opacity: .8;
+}
+
+.header-bottom__close {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 990px) {
+    .header-upper__links .badge {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: .55rem;
+    }
+    .header-upper__links p {
+        line-height: 120%;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-bottom {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        background-color: transparent;
+        visibility: hidden;
+    }
+
+    .header-bottom.active {
+        visibility: visible;
+    }
+
+    .header-bottom.active .overlay {
+        opacity: 1;
+    }
+
+    .header-bottom.active .container-xxl {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .header-bottom .overlay {
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,.3);
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    .header-bottom .container-xxl {
+        z-index: 1001;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        background: var(--color-131921);
+        margin: 0 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 100%;
+        overflow: auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all .3s ease;
+    }
+
+    .header-bottom .dropdown-menu button:hover {
+        background-color: #e0e0e0;
+        color: var(--color-131921);
+    }
+
+    .header-bottom .dropdown-menu button {
+        background-color: white;
+        color: var(--color-131921);
+    }
+
+    .header-bottom .dropdown-item:not(:last-child) {
+        border-bottom: 1px solid var(--color-131921);
+    }
+
+    .header-bottom .dropdown button.btn-secondary {
+        border: none;
+    }
+
+    .header-upper__links .input-group.active > .form-control {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    .header-upper__links .input-group > .form-control svg {
+        fill: var(--color-131921);
+        margin-right: .5rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .header-upper__links .input-group > .form-control {
+        position: absolute;
+        width: 304px;
+        display: flex;
+        align-items: center;
+        right: -200px;
+        border-radius: 6px!important;
+        border: 1px solid var(--color-131921);
+        top: 150%;
+        z-index: 9;
+        opacity: 0;
+        transition: all .3s ease;
+        transform: translateY(20px);
+        visibility: hidden;
+    }
+
+    .header-upper__links .input-group {
+        width: auto;
+    }
+
+    .header-upper__links .input-group span {
+        background-color: transparent;
+    }
+
+    .header-upper__links .input-group svg {
+        fill: white;
+        font-size: 1.4rem!important;
+    }
+
+    .header-upper__links input.form-control {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-upper__links .input-group > .form-control {
+        right: -168px;
+    }
+    .header-top-strip p {
+        font-size: .8rem;
+        line-height: 130%;
+    }
+
+    .header-upper__links img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .header-upper__links .input-group svg,
+    .header-upper__burger svg {
+        font-size: 1.2rem!important;
+    }
+}
+/*END RESPONSIVE PART*/

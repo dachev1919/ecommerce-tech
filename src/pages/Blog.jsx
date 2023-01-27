@@ -21,7 +21,7 @@ const Blog = () => {
                     <Row>
                         {
                             BLOG.map(news => (
-                                <Col key={news.id} className='col-6'>
+                                <Col key={news.id} className='col-12' sm='6'>
                                     <BlogCard news={news} />
                                 </Col>
                             ))

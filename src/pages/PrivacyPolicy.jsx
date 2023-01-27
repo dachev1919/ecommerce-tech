@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
             <Breadcrumb breadcrumbs={[{title: 'Privacy Policy', link: '/ecommerce-tech/privacy-policy'}]}/>
             <section className="privacy-policy policy">
                 <Container fluid='xxl'>
-                    <div className="privacy-policy__wrapper card-wrapper">
+                    <div className="privacy-policy__wrapper card-wrapper without-margin">
                         <div className="privacy-policy__item policy__item">
                             <h5>The Standard Lorem Ipsum Passage</h5>
                             <p>

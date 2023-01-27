@@ -43,7 +43,7 @@ const MarquesSection = () => {
             <Container fluid="xxl">
                 <Row>
                     <Col className="col-12">
-                        <div className="marquee-inner-wrapper card-wrapper">
+                        <div className="marquee-inner-wrapper card-wrapper without-margin">
                             <Marquee className="d-flex align-items-center">
                                 {
                                     MARQUE.map(mark => (
